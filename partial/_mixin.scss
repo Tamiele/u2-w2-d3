@@ -1,0 +1,29 @@
+@mixin margin($property, $value) {
+  margin-#{$property}: $value;
+}
+@mixin padding($property, $value) {
+  padding-#{$property}: $value;
+}
+
+@mixin buttonStyles($green-color) {
+  color: white;
+  padding: $padding-Button;
+  border-radius: 10px;
+  border: none;
+  background-color: $green-color;
+  cursor: pointer;
+}
+@mixin titolo() {
+  @include padding("block", 10px);
+  color: white;
+  font-family: $font-generale;
+  font-weight: $grassetto;
+  font-size: 30px;
+  text-align: center;
+}
+
+@mixin paragrafo() {
+  @include padding("block", 10px);
+  font-family: $font-generale;
+  color: white;
+}

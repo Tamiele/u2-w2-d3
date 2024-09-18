@@ -1,0 +1,22 @@
+nav {
+  padding-inline: $padding-inline;
+  padding-block: $padding-block;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    @media screen and (min-width: 470px) {
+      flex-direction: column;
+      @include margin("bottom", 5px);
+    }
+    li {
+      @include margin("inline", 5px);
+    }
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+    button {
+      @include buttonStyles($green-color);
+    }
+  }
+}

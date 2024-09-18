@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  background-color: $hero-color;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    @include titolo();
+  }
+  p {
+    @include paragrafo();
+  }
+
+  img {
+    width: 100;
+  }
+}
